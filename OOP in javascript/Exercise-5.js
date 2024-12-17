@@ -25,3 +25,10 @@ console.log(t.constructor === Triangle);
 console.log(shape.isPrototypeOf(t));
 console.log(t.getPerimeter());
 console.log(t.getType());
+
+// question 5
+for (prop in t) {
+    if(t.hasOwnProperty(prop)) {
+        console.log(prop)
+    }
+}
