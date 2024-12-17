@@ -19,3 +19,9 @@ Triangle.prototype = shape;
 Triangle.prototype.getPerimeter = function () {
     return this.a + this.b + this.c;
 }
+// question 4
+var t = new Triangle(1, 2, 3);
+console.log(t.constructor === true);
+console.log(shape.isPrototypeof(t));
+console.log(t.getPerimeter());
+console.log(t.getType());
