@@ -21,7 +21,7 @@ Triangle.prototype.getPerimeter = function () {
 }
 // question 4
 var t = new Triangle(1, 2, 3);
-console.log(t.constructor === true);
-console.log(shape.isPrototypeof(t));
+console.log(t.constructor === Triangle);
+console.log(shape.isPrototypeOf(t));
 console.log(t.getPerimeter());
 console.log(t.getType());
