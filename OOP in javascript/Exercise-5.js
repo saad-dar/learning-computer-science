@@ -32,3 +32,17 @@ for (prop in t) {
         console.log(prop)
     }
 }
+
+// question 6 
+
+if (typeof Array.prototype.shuffle !== 'function') {
+    Array.prototype.shuffle = function () {
+        for (let i = this.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [this[i], this[j]] = [this[j], this[i]];
+        }
+        return this
+    }
+}
+
+console.log([1, 2, 3, 4, 5, 6, 7, 8, 9].shuffle())
